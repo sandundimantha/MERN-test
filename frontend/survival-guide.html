@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Survival Guide • PulseWave Festival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./pages.css" />
+  </head>
+  <body class="page" id="top">
+    <header class="page-hero">
+      <nav class="nav">
+        <div class="logo">PulseWave</div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./index.html#watch">Watch</a></li>
+          <li><a href="./index.html#tickets">Tickets</a></li>
+        </ul>
+      </nav>
+      <div class="section-head">
+        <p class="eyebrow">Survival guide</p>
+        <h1>Plot your run, conserve your energy, win the night</h1>
+        <p class="subhead">
+          Packing intel, hydration hacks, and immersive etiquette so you can keep the
+          narrative moving for all three nights.
+        </p>
+        <div class="pill-nav">
+          <a href="#essentials">Essentials</a>
+          <a href="#checklist">Checklist</a>
+          <a href="#resources">Resources</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="essentials" class="section">
+        <div class="section-head">
+          <p class="eyebrow">Essentials</p>
+          <h2>Hit the grounds prepared</h2>
+          <p class="subhead">
+            Think of PulseWave like an overnight story raid: you’ll need stamina, curiosity,
+            and a little tech to uncover every clue.
+          </p>
+        </div>
+        <div class="guide-grid">
+          <article class="card">
+            <h3>Energy & focus</h3>
+            <ul class="tip-list">
+              <li>Alternate neon drinks with water—hydration booths are every 300m.</li>
+              <li>Use the quiet recharge pods between sets to rest your senses.</li>
+              <li>Micronap lounges light up when a pod is open—follow the cyan glow.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Wayfinding</h3>
+            <ul class="tip-list">
+              <li>Stages broadcast color-coded pulses on the skyline every hour.</li>
+              <li>Scan city glyphs to unlock map layers in the PulseWave app.</li>
+              <li>Need help? Wave at any teal-clad Story Marshal for guidance.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Etiquette</h3>
+            <ul class="tip-list">
+              <li>Keep the lore alive—avoid spoilers when exiting an activation.</li>
+              <li>Consent first for photography inside narrative zones.</li>
+              <li>Return borrowed wearable tech before dawn to earn bonus lore points.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="checklist" class="section">
+        <div class="section-head">
+          <p class="eyebrow">Gear check</p>
+          <h2>Interactive packing checklist</h2>
+          <p class="subhead">
+            Toggle items as you pack and keep the completion meter updated. We store progress
+            locally in your browser so you can reopen this page on the road.
+          </p>
+        </div>
+        <div class="card">
+          <div class="resource-links" style="justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <p class="status-pill js-checklist-progress" aria-live="polite">0 / 5 ready</p>
+            <button class="btn ghost" type="button" data-reset-checklist>Reset</button>
+          </div>
+          <div class="checklist" data-checklist>
+            <label class="checklist-item">
+              <input type="checkbox" value="wearable-tech" />
+              Wearable light patch or smart jewelry
+            </label>
+            <label class="checklist-item">
+              <input type="checkbox" value="hydration-pack" />
+              Collapsible hydration pack
+            </label>
+            <label class="checklist-item">
+              <input type="checkbox" value="multi-layer-fit" />
+              Layered outfit for day-to-night temperature swings
+            </label>
+            <label class="checklist-item">
+              <input type="checkbox" value="portable-charger" />
+              Pocket-sized power bank for the PulseWave app
+            </label>
+            <label class="checklist-item">
+              <input type="checkbox" value="earplugs" />
+              High-fidelity earplugs for marathon sets
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <section id="resources" class="section">
+        <div class="section-head">
+          <p class="eyebrow">Resources</p>
+          <h2>Plan your nights like a resident</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="card">
+            <h3>Nightly cadence</h3>
+            <p>
+              Gates open at 4pm, narrative quests start at sunset, and the final scene wraps
+              with sunrise drone ballets. Pace your meals and breaks accordingly.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Support network</h3>
+            <p>
+              Wellness teams roam each district; look for violet lanterns. Accessibility shuttles
+              can be requested through the app or any info hub.
+            </p>
+          </article>
+          <article class="card">
+            <h3>More intel</h3>
+            <div class="resource-links">
+              <a href="./about.html">Meet the creative team</a>
+              <a href="./index.html#tickets">Upgrade passes</a>
+              <a href="mailto:crew@pulsewave.city">Contact Crew</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 PulseWave Collective</p>
+      <div class="resource-links">
+        <a href="./index.html">Return home</a>
+        <a href="#top" class="back-to-top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+    <script src="./guide.js" defer></script>
+  </body>
+</html>
+

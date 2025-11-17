@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  background: radial-gradient(circle at top, #10122b, #05060b 60%);
+  color: #f5f7ff;
+  min-height: 100vh;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page main {
+  flex: 1;
+}
+
+.page-hero {
+  padding: 3rem clamp(1.5rem, 6vw, 5rem) 2rem;
+  background: linear-gradient(120deg, rgba(5, 6, 11, 0.9), rgba(19, 17, 35, 0.9));
+}
+
+.page-hero h1 {
+  font-size: clamp(2.5rem, 5vw, 3.8rem);
+  margin-bottom: 1rem;
+}
+
+.pill-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.pill-nav a {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: inherit;
+}
+
+.section {
+  padding: 4rem clamp(1.5rem, 6vw, 5rem);
+}
+
+.section-head {
+  max-width: 720px;
+  margin-bottom: 2.5rem;
+}
+
+.content-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+  background: rgba(15, 16, 26, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  box-shadow: 0 20px 60px rgba(5, 6, 11, 0.4);
+}
+
+.timeline {
+  border-left: 2px solid rgba(255, 255, 255, 0.1);
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.timeline-entry {
+  position: relative;
+}
+
+.timeline-entry::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ff2674;
+  position: absolute;
+  left: -2.75rem;
+  top: 0.2rem;
+  box-shadow: 0 0 12px rgba(255, 38, 116, 0.7);
+}
+
+.team-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.team-card {
+  position: relative;
+  padding-top: 3.5rem;
+}
+
+.team-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: -40px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.guide-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.tip-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  color: #9aa0bf;
+}
+
+.tip-list li {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.tip-list li::before {
+  content: "✦";
+  color: #ff2674;
+  margin-top: 0.15rem;
+}
+
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.checklist-item input {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.checklist-item.is-checked {
+  background: rgba(255, 38, 116, 0.12);
+  border-color: #ff2674;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  color: #9aa0bf;
+}
+
+.resource-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.resource-links a {
+  color: #ff2674;
+  font-weight: 600;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #9aa0bf;
+}
+
+.footer a {
+  color: #ff2674;
+}
+
