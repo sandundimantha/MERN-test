@@ -1,14 +1,11 @@
 import express from "express";
+import {getAllNotes } from "../controllers/notesController.js";
 
 const router = express.Router();
 
-router.get("/", (req, res) => {
-    res.status(200).send("you just fetched the notes ");
-});
+router.get("/", getAllNotes); 
 
-router.post("/", (req, res) => {
-     res.status(201).json({message:"note created successfully !"});
-}); 
+router.post("/", createNote); 
 
 router.post("/", (req, res) => {
  res.status(201).json({message:"note created successfully !"});
